@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevHub | Meus Projetos Open Source</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">Dev<span>Hub</span></div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projetos</a></li>
+                <li><a href="https://github.com/SEU-USUARIO" target="_blank">GitHub</a></li>
+            </ul>
+        </nav>
+        <div id="home" class="hero">
+            <h1>Explorando o Código Aberto</h1>
+            <p>Bem-vindo à minha vitrine de projetos. Aqui você encontra meus games, apps e ferramentas web.</p>
+            <a href="#projects" class="btn-primary">Ver Projetos</a>
+        </div>
+    </header>
+
+    <main id="projects">
+        <section class="container">
+            <h2 class="section-title">Meus Projetos</h2>
+            
+            <!-- Filtros -->
+            <div class="filters">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="game">Games</button>
+                <button class="filter-btn" data-filter="app">Apps</button>
+                <button class="filter-btn" data-filter="web">Sites/Web</button>
+            </div>
+
+            <!-- Grade de Projetos -->
+            <div class="project-grid">
+                
+                <!-- Exemplo de Projeto 1 (Game) -->
+                <div class="project-card" data-category="game">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=500" alt="Projeto Game">
+                    </div>
+                    <div class="project-info">
+                        <h3>Cyber Adventure</h3>
+                        <p>Um jogo de plataforma 2D feito em JavaScript e HTML5 Canvas.</p>
+                        <div class="tags">
+                            <span>JS</span>
+                            <span>Canvas</span>
+                        </div>
+                        <div class="links">
+                            <a href="#" class="github"><i class="fab fa-github"></i> Repo</a>
+                            <a href="#" class="demo"><i class="fas fa-external-link-alt"></i> Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Exemplo de Projeto 2 (App) -->
+                <div class="project-card" data-category="app">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=500" alt="Projeto App">
+                    </div>
+                    <div class="project-info">
+                        <h3>Task Master</h3>
+                        <p>Aplicativo de produtividade com foco em foco e organização pessoal.</p>
+                        <div class="tags">
+                            <span>React Native</span>
+                            <span>Firebase</span>
+                        </div>
+                        <div class="links">
+                            <a href="#" class="github"><i class="fab fa-github"></i> Repo</a>
+                            <a href="#" class="demo"><i class="fas fa-external-link-alt"></i> Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Exemplo de Projeto 3 (Web) -->
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=500" alt="Projeto Web">
+                    </div>
+                    <div class="project-info">
+                        <h3>Finance Dash</h3>
+                        <p>Dashboard financeiro completo com gráficos em tempo real.</p>
+                        <div class="tags">
+                            <span>Vue.js</span>
+                            <span>Chart.js</span>
+                        </div>
+                        <div class="links">
+                            <a href="#" class="github"><i class="fab fa-github"></i> Repo</a>
+                            <a href="#" class="demo"><i class="fas fa-external-link-alt"></i> Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Seu Nome - Desenvolvido com ❤️ e Código Aberto.</p>
+        <div class="social">
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
